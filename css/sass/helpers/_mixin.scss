@@ -1,0 +1,63 @@
+// media query
+@mixin mediaQuery($device) {
+  @if $device == 'xs' {
+    @media #{$xs} {
+      @content;
+    }
+  } @else if $device == 'sm-min' {
+    @media #{$sm-min} {
+      @content;
+    }
+  } @else if $device == 'sm-max' {
+    @media #{$sm-max} {
+      @content;
+    }
+  } @else if $device == 'md-min' {
+    @media #{$md-min} {
+      @content;
+    }
+  } @else if $device == 'md-max' {
+    @media #{$md-max} {
+      @content;
+    }
+  } @else if $device == 'lg-min' {
+    @media #{$lg-min} {
+      @content;
+    }
+  } @else if $device == 'lg-max' {
+    @media #{$lg-max} {
+      @content;
+    }
+  } @else if $device == 'xl' {
+    @media #{$xl} {
+      @content;
+    }
+  }
+}
+
+// prefixes
+@mixin prefixer($prop, $value, $list) {
+  @each $lis in $list {
+    #{$lis + $prop}: $value;
+  }
+}
+// overlay
+@mixin overlay($color, $transperancy) {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color, $transperancy);
+}
+
+// key frames
+@mixin keyF($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

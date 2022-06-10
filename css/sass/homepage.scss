@@ -1,0 +1,16 @@
+//import helper files
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/function';
+// Grid System
+@import './layouts/grid';
+// global styling
+@import './pages/global';
+//import layout files header
+@import './layouts/header';
+/// import heading component
+@import './components/heading';
+/// import page
+@import './pages/homepage';
+//import layout files footer
+@import './layouts/footer';

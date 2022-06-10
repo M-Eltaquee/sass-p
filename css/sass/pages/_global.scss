@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bcCol;
+  font: {
+    family: Tahoma;
+  }
+  ul,
+  ol {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+}

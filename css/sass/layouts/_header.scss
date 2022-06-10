@@ -1,0 +1,83 @@
+header {
+  padding-top: $secPadding;
+  padding-bottom: $secPadding;
+  border-bottom: 1px solid #ccc;
+  transition: 0.3s padding;
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      h1 {
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 35px;
+        &::first-letter {
+          color: $redCol;
+        }
+      }
+      p {
+        color: $greyCol;
+        text-align: center;
+      }
+    }
+    #burger {
+      width: 50px;
+      padding-top: 5px;
+      cursor: pointer;
+      display: none;
+      div {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 5px;
+        background-color: $redCol;
+      }
+      @include mediaQuery(lg-min) {
+        display: none;
+      }
+    }
+    ul {
+      display: flex;
+      background-color: $redCol;
+      border-radius: 5px;
+      border-radius: 10px;
+      overflow: hidden;
+      li {
+        a {
+          display: block;
+          color: #fff;
+          padding: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: bold;
+          transition: 0.3s opacity linear;
+        }
+        &.active a,
+        &:hover a {
+          opacity: 0.5;
+        }
+      }
+    }
+    @include mediaQuery(md-max) {
+      #burger {
+        display: block;
+      }
+      ul {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 10px);
+        z-index: 2;
+        width: 100%;
+      }
+    }
+  }
+  &.header-padding {
+    padding-bottom: 310px;
+  }
+}

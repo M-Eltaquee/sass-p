@@ -1,0 +1,21 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include mediaQuery(xs) {
+    max-width: 100%;
+  }
+  @include mediaQuery(sm-min) {
+    max-width: 540px;
+  }
+  @include mediaQuery(md-min) {
+    max-width: 720px;
+  }
+  @include mediaQuery(lg-min) {
+    max-width: 920px;
+  }
+  @include mediaQuery(xl) {
+    max-width: 1170px;
+  }
+}

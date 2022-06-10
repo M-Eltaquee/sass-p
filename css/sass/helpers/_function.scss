@@ -1,0 +1,12 @@
+/// mixin for determine side spacing elements
+/// @param{$param} is the lang variable
+/// @return left or right
+///
+$seka: '';
+@function direction() {
+  @if $lang == 'english' {
+    $seka: 'left' !global;
+  } @else {
+    $seka: 'right' !global;
+  }
+}

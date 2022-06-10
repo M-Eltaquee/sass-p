@@ -1,0 +1,70 @@
+/* line 1, ../sass/components/_global.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+@media (min-width: 576px) and (max-width: 677.98px) {
+  /* line 1, ../sass/pages/_homepage.scss */
+  a {
+    color: white; } }
+
+/* line 6, ../sass/pages/_homepage.scss */
+.back {
+  height: 100vh; }
+  /* line 8, ../sass/pages/_homepage.scss */
+  .back::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.7); }
+
+/* line 1, ../sass/components/_buttons.scss */
+button {
+  font-size: 30px;
+  padding-left: 20px;
+  margin-left: 20px; }
+
+@media (max-width: 575.98px) {
+  /* line 1, ../sass/components/_grid.scss */
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: red; } }
+@media (min-width: 576px) and (max-width: 677.98px) {
+  /* line 1, ../sass/components/_grid.scss */
+  .container {
+    max-width: 540px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: black; } }
+@media (min-width: 678px) and (max-width: 991.98px) {
+  /* line 1, ../sass/components/_grid.scss */
+  .container {
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: green; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 1, ../sass/components/_grid.scss */
+  .container {
+    max-width: 920px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: blue; } }
+@media (min-width: 1200px) {
+  /* line 1, ../sass/components/_grid.scss */
+  .container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-color: yellow; } }

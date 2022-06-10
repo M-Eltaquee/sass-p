@@ -1,0 +1,129 @@
+footer {
+  padding-top: $secPadding;
+  padding-bottom: $secPadding;
+  background-color: $greyCol;
+  color: #333;
+  .content {
+    display: flex;
+    gap: 30px;
+    .latest > h4,
+    .details > h4,
+    .contact > h4 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+    .latest {
+      flex-basis: 50%;
+      .latest-items {
+        .latest-item {
+          margin-bottom: 20px;
+          display: flex;
+          gap: 20px;
+          .img-holder {
+            img {
+              width: 150px;
+              padding: 2px;
+              border: 1px solid #333;
+            }
+          }
+          .desc {
+            h5 {
+              color: $redCol;
+              font-size: 16px;
+            }
+            p {
+              line-height: 1.6;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+    .details {
+      .company,
+      .call,
+      .hours {
+        margin-bottom: 20px;
+      }
+      .company > p,
+      .call > p,
+      .hours > p {
+        color: #777;
+      }
+      .call {
+        a {
+          color: $redCol;
+        }
+      }
+      .hours h6 {
+        font-size: 14px;
+      }
+    }
+    .contact {
+      flex: 1;
+      form {
+        width: 100%;
+        input:not([type='submit']),
+        textarea {
+          display: block;
+          width: 100%;
+          border: none;
+          background-color: #ccc;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+        textarea {
+          height: 100px;
+          resize: none;
+        }
+        input[type='submit'] {
+          cursor: pointer;
+          letter-spacing: 2px;
+          padding: 10px 15px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: $redCol;
+          border: none;
+        }
+      }
+    }
+  }
+  hr {
+    border-color: $greyCol;
+    margin-bottom: 20px;
+  }
+  .tail {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mediaQuery(md-max) {
+    text-align: center;
+    .content {
+      flex-direction: column;
+      .latest > h4,
+      .details > h4,
+      .contact > h4 {
+        margin-bottom: 30px;
+      }
+      .latest .latest-items .latest-item {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      .contact form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    hr {
+      margin-top: 20px;
+    }
+    .tail {
+      flex-direction: column;
+    }
+  }
+}
