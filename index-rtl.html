@@ -11,6 +11,12 @@
     <!-- custom style  -->
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/home-rtl.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
     <title>العربي</title>
   </head>
   <body>
@@ -29,17 +35,17 @@
             <div></div>
           </div>
           <ul class="navbar">
-            <li class="active"><a href="#">الرئيسية</a></li>
-            <li><a href="#">التزيين</a></li>
-            <li><a href="#">العرض الكامل</a></li>
-            <li><a href="#">اللسته </a></li>
-            <li><a href="#">الكتابة</a></li>
+            <li class="active"><a href="#main">الرئيسية</a></li>
+            <li><a href="#slider">التزيين</a></li>
+            <li><a href="#services">العرض الكامل</a></li>
+            <li><a href="#lorem">اللسته </a></li>
+            <li><a href="#footer">الكتابة</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- end header  -->
-    <main>
+    <main id="main">
       <!-- start slider  -->
       <section id="slider">
         <div class="container">
@@ -213,7 +219,7 @@
       </section>
       <!-- end Lorem  -->
     </main>
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="content">
           <div class="latest">

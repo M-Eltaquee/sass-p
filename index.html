@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./resources/css/normalize.min.css" />
     <!-- custom style  -->
     <link rel="stylesheet" href="./css/home.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Home</title>
   </head>
   <body>
@@ -28,17 +33,17 @@
             <div></div>
           </div>
           <ul class="navbar">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Style</a></li>
-            <li><a href="#">Full Width</a></li>
-            <li><a href="#">Dropdown</a></li>
-            <li><a href="#">Link text</a></li>
+            <li class="active"><a href="#main">Home</a></li>
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#lorem">Dropdown</a></li>
+            <li><a href="#footer">Link text</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- end header  -->
-    <main>
+    <main id="main">
       <!-- start slider  -->
       <section id="slider">
         <div class="container">
@@ -212,7 +217,7 @@
       </section>
       <!-- end Lorem  -->
     </main>
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="content">
           <div class="latest">
