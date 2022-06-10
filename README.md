@@ -1,2 +1,2 @@
 # sass-p
-Sass based project
+## Sass based project
